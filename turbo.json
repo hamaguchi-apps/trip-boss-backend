@@ -1,0 +1,55 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "*.env"
+      ],
+      "outputs": [
+        "dist/**"
+      ],
+      "env": [
+        "NODE_ENV",
+        "PISMO_BASE_URL",
+        "PISMO_SERVER_KEY",
+        "PISMO_SERVER_SECRET",
+        "GRAPHQL_HOST",
+        "LEDGER_BASE_URL",
+        "ENV",
+        "PISMO_BASE_URL",
+        "PORT"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "test": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "env": [
+        "NODE_ENV",
+        "PISMO_BASE_URL",
+        "PISMO_SERVER_KEY",
+        "PISMO_SERVER_SECRET",
+        "GRAPHQL_HOST",
+        "LEDGER_BASE_URL",
+        "ENV",
+        "PISMO_BASE_URL",
+        "PORT"
+      ]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

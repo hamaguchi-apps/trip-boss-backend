@@ -1,0 +1,8 @@
+services:
+  trip-boss-backend-functions:
+    image: trip-boss-backend-functions
+    build:
+      context: ./
+      dockerfile: ./apps/trip-boss-backend-functions/Dockerfile
+    ports:
+      - 3000:3000

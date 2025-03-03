@@ -1,0 +1,25 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": "./base.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@stylistic/eslint-plugin-ts": "^2.11.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^2.3.3",
+    "eslint-plugin-turbo": "^2.3.3",
+    "eslint-plugin-jest": "^28.10.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "globals": "^15.13.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  }
+}

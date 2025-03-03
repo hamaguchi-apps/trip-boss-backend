@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "integer": {
+      "type": ["integer"]
+    },
+    "string": {
+      "type": ["string"]
+    },
+    "date": {
+      "type": ["string"],
+      "format": "date"
+    }
+  },
+  "required": ["integer", "string", "date"]
+}

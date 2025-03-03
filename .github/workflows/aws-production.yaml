@@ -1,0 +1,30 @@
+name: "3 - [AWS][PRD] Build"
+
+on:
+  push:
+    branches:
+      - "main"
+
+  workflow_dispatch:
+
+jobs:
+  publish-docker:
+    uses: ./.github/workflows/build-aws.yaml
+    with:
+      environment: production
+      run-environment: production
+      aws-account: '381097603548'
+      region: us-east-1
+
+    secrets: inherit
+
+  update-image-tag:
+    uses: ./.github/workflows/update-tag.yaml
+    needs:
+      - publish-docker
+    with:
+      environment: local
+      version: microk8s
+      target-repository: hamaguchi-apps/hamaguchi-apps-infra
+      image-tag: ${{ needs.publish-docker.outputs.image-tag }}
+    secrets: inherit

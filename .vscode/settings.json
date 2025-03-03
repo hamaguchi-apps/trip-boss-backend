@@ -1,0 +1,76 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.codeActionsOnSave.rules": [
+    "!@typescript-eslint/no-misused-promises",
+    "!@typescript-eslint/await-thenable",
+    "!@typescript-eslint/no-unsafe-return",
+    "!@typescript-eslint/no-floating-promises",
+    "!@typescript-eslint/unbound-method",
+    "*"
+  ],
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "downgrade"
+    }
+  ],
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true,
+  // "eslint.workingDirectories": [
+  //   {
+  //     "mode": "auto"
+  //   }
+  // ],
+  "eslint.workingDirectories": [
+    {
+      "pattern": "./apps/*/"
+    },
+    {
+      "pattern": "./packages/*/"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "cSpell.words": [],
+  "cSpell.language": "en,pt,pt_BR",
+  "vscode-graphql.debug": true
+}

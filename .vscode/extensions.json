@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "graphql.vscode-graphql-syntax",
+    "graphql.vscode-graphql",
+    "redhat.vscode-yaml",
+    "richie5um2.vscode-sort-json",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker",
+    "vivaxy.vscode-conventional-commits",
+    "william-voyek.vscode-nginx",
+    "amoosbr.markdown-imsize"
+  ]
+}

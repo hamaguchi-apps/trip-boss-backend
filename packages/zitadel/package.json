@@ -1,0 +1,40 @@
+{
+  "name": "@repo/zitadel",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Zitadel",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "tsc -w",
+    "lint": "eslint \"{src,apps,libs,test,e2e-test}/**/*.ts\" --fix",
+    "clean": "rimraf dist && rimraf node_modules"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.15",
+    "@repo/typed-config": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@zitadel/node": "^3.0.3",
+    "axios": "^1.7.9",
+    "convict": "^6.2.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/convict": "*",
+    "@types/node": "^20.17.9",
+    "rimraf": "*",
+    "eslint": "*",
+    "nice-grpc-common": "*",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "@bufbuild/protobuf": "*"
+  }
+}
